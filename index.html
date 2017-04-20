@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Piechart Test</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+        <script type="text/javascript" src="js/piechart.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/piechart.min.css" />
+    </head>
+    <body>
+        <div class="container">
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('#piechart').piechart({
+                        data: [
+                            native = [
+                                {cat: 'Native Programmiersprachen', val: 9, label: "JAVA"},
+                                {cat: 'Native Programmiersprachen', val: 8, label: "JSF"},
+                                {cat: 'Native Programmiersprachen', val: 9, label: "Primefaces"},
+                                {cat: 'Native Programmiersprachen', val: 5, label: "Android"},
+                                {cat: 'Native Programmiersprachen', val: 5, label: "Dartlang"}
+                            ],
+
+                            cms = [
+                                {cat: 'Content Management Systeme', val: 3, label: "Wordpress"},
+                                {cat: 'Content Management Systeme', val: 7, label: "Contao"},
+                                {cat: 'Content Management Systeme', val: 8, label: "TYPO3"},
+                            ],
+
+                            web = [
+                                {cat: 'Webkompetenzen', val: 9, label: "HTML5"},
+                                {cat: 'Webkompetenzen', val: 9, label: "SCSS"},
+                                {cat: 'Webkompetenzen', val: 9, label: "CSS3"},
+                                {cat: 'Webkompetenzen', val: 9, label: "Bootstrap"},
+                                {cat: 'Webkompetenzen', val: 7, label: "LESS"},
+                                {cat: 'Webkompetenzen', val: 6, label: "Javascript"},
+                                {cat: 'Webkompetenzen', val: 9, label: "jQuery"},
+                                {cat: 'Webkompetenzen', val: 5, label: "PHP"},
+                                {cat: 'Webkompetenzen', val: 7, label: "MySQL"},
+                            ],
+
+                            sonstiges = [
+                                {cat: 'Sonstiges', val: 3, label: "Linux"},
+                                {cat: 'Sonstiges', val: 5, label: "Photoshop"},
+                                {cat: 'Sonstiges', val: 3, label: "Regex"}
+                            ]
+                        ]
+                    });
+                });
+            </script>
+            <div id="piechart">
+
+            </div>    
+        </div>
+    </body>
+</html>
